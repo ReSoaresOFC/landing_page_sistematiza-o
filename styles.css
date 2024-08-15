@@ -41,14 +41,14 @@ nav ul li a:hover {
 header {
     background-image: url('https://img.freepik.com/fotos-gratis/vista-superior-de-produtos-cosmeticos-organicos_23-2148317616.jpg?t=st=1723673432~exp=1723677032~hmac=d82674c7e45f1ba8a2f9a7930efdc522a1d3f22824dd9487306d6c97dd59aea0&w=996');
     background-size: cover;
-    color: rgb(80, 83, 80);
+    color: #505350;
     text-align: center;
     padding: 180px 30px;
 }
 
 .header-content {
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 header h1 {
@@ -172,6 +172,25 @@ section {
 .formulario input[type="submit"]:hover {
     background-color: #45a049;
 }
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
 
 #successMessage {
     margin-top: 20px;
