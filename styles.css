@@ -1,0 +1,187 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #07612a;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #238a42;
+}
+
+header {
+    background-image: url('https://img.freepik.com/fotos-gratis/vista-superior-de-produtos-cosmeticos-organicos_23-2148317616.jpg?t=st=1723673432~exp=1723677032~hmac=d82674c7e45f1ba8a2f9a7930efdc522a1d3f22824dd9487306d6c97dd59aea0&w=996');
+    background-size: cover;
+    color: rgb(80, 83, 80);
+    text-align: center;
+    padding: 180px 30px;
+}
+
+.header-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #07612a;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #45a049;
+}
+
+section {
+    padding: 50px 20px;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.servico .imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.servico img {
+    width: 45%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.feature-item {
+    max-width: 30%;
+    text-align: center;
+}
+
+.equipe .membros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+}
+
+.equipe .membro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.equipe .membro h3 {
+    margin: 10px 0px 10px;
+}
+
+.testemunhos .testemunho-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid #4CAF50;
+    margin-bottom: 20px;
+}
+
+.testemunhos .testemunho-item span {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Adicionando estilos para o campo telefone e mensagem de sucesso */
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formulario label {
+    margin-top: 15px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"] {
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.formulario input[type="submit"] {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#successMessage {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    display: none; /* Inicialmente oculto */
+}
+
+/* Adicionando estilo para tornar a mensagem visível quando necessário */
+.hidden {
+    display: none;
+}
